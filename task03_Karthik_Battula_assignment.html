@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelli Vectra Technologies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .links{
+            display: flex;
+            justify-content: center;
+            margin-right: 25px;
+            width:100%;
+            height:5%;
+        }
+        .links a {
+            margin-left: 15px; 
+        }
+    /* Style for the header */
+        .header {
+            display: flex;
+            align-items: center;
+            
+        }
+        .heading{
+            padding: 150px;
+            background-image: url('https://i.ibb.co/gWfX9kn/heading-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            height: 200px;
+            justify-content: center;
+        }
+        .heading-content{
+            padding: 10px;
+        }
+        .searchbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+        }
+        .search{
+            margin:10px;
+            padding: 10px;
+            width: 70%;
+            background-color: rgb(240, 206, 143);
+        }
+        .categories{
+            margin:10px;
+            padding: 10px;
+            width: 30%;
+            background-color: rgb(240, 206, 143);
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.8s ease;
+        }
+        
+        a:hover,i:hover{
+            border-bottom-color: orange;
+            color: orange;
+        }
+        
+    /* Style for the logo */
+        .logo {
+            width: 250px;
+            height: 100px;
+            margin-right: 20px; 
+        }
+    
+    /* Style for the navigation */
+        nav {
+            display: flex;
+        }
+    
+        nav a {
+            margin-right: 10px; 
+            text-decoration: none; 
+            color: black; 
+        }
+    /* Style for the container */
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 25px;
+          width:80%;
+          margin:0px auto;
+        }
+    
+    /* Style for each part */
+        .part {
+          width: 30%;
+          border: 1px solid black;
+          padding: 10px;
+          box-sizing: border-box;
+          background-color: rgb(240, 206, 143);
+          border-radius:10px;
+          box-shadow:4px 3px 10px black;
+        }
+        .count{
+            display: flex;
+            justify-content: center;
+        }
+        .count a{
+            padding: 10px;
+            text-decoration: none;
+        }
+        .count a:hover{
+            color: rgb(247, 245, 242);
+            border-radius: 50%;
+            text-decoration: none;
+            background-color:orange;
+
+            
+        }
+        .footer{
+            background-color: black;
+            padding: 10px;
+            margin: 10px;
+            height: 450px;
+            justify-content: center;
+            padding-top: 150px;
+            line-height: 35px;
+        }
+        .footer a,p,h3,i{
+            color: white;
+            
+        }
+        .footer h3{
+            color:orange;
+        }
+        .user-image {
+            width:70px;
+            height:70px;
+            border-radius:500px;
+            float:left;
+            padding:10px;  
+        }
+        .container p{
+            padding: 10px;
+        }
+        .vl {
+            border-left: 6px solid orange;
+            height: 150px;
+            float:left;
+          }
+          .heading-name {
+            color:white;
+            text-shadow:2px 2px black;
+            font-family: calibri;
+          }
+          .card-image {
+            width:80%;
+            height:50%;
+            border-radius:10px;
+          }
+          .image-container {
+            text-align:center;
+          }
+          .part p{
+            color:black;
+          }
+          .read-more-button {
+            background-color: yellow;
+            display: flex;
+            align-items: flex-end;
+            margin-left: 70%;
+            cursor: pointer;
+        }
+        .fas{
+            color:white;
+            line-height: 25px;
+            cursor: pointer;
+        }
+        .fab{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .social-icons i {
+            font-size: 15px;
+            color: green;
+            border: 2px solid orange;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+
+        .social-icons i:hover {
+            background-color: white;
+            color: white;
+
+        }
+      </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.ibb.co/jDZSGYR/Intelli-logo.png" class="logo"/>
+        <nav class="links">
+            <a href="#">Home</a>
+            <a href="#">Company+</a>
+            <a href="#">Service & Solution</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </div>
+
+    <!--Header-->
+    <div class="heading">
+        <div class="vl"></div>
+        <h1 class="heading-name">&nbsp;Blogs</h1>
+        <p class="heading-content" style="color:rgb(228, 228, 228);">&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores placeat exercitationem rem tempore <br> consectetur harum natus laborum ducimus corrupti inventore animi quos ipsum.</p>
+        <div class="social-icons">
+            <i class="fab fa-twitter"  style="color:orange"></i>
+            <i class="fab fa-linkedin" style="color:orange"></i>
+        </div>
+    </div>
+<!--Search bar along with categories dropdown box-->
+    <div class="searchbar">
+        <input type="search" class="search fas fa-search" placeholder="Search" /><i class="fas fa-search" style="color:black"></i>
+        <select class="categories" name="category">
+            <option value="all">All Categories</option>
+            <option value="motivational">Motivational</option>
+            <option value="funny">Funny</option>
+            <option value="sarcastic">Sarcastic</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="part">
+          <!-- Content for the first part -->
+          <div class="image-container"><img src="https://i.ibb.co/nQGJH3y/A1.png" class="card-image" alt="image"></div><br><br/>
+          <img src="https://i.ibb.co/Bnw5kxJ/A2.png" class="user-image" alt="image"> 
+          <h4>Jessica</h4>
+          <h6>UI/UX Designer</h6>
+          <p>Consectetur adipisicing elit<br> dolore magna aliqua?</p>
+          <p>12 Jan 2024</p>
+          <button  class="read-more-button"> Read More</button>
+        </div>
+        <div class="part">
+          <!-- Content for the second part -->
+          <div class="image-container"><img src="https://i.ibb.co/nQGJH3y/A1.png" class="card-image" alt="image"></div><br><br/>
+          <img src="https://i.ibb.co/Bnw5kxJ/A2.png" class="user-image" alt="image"> 
+          <h4>Mark Ray</h4>
+          <h6>Graphic Designer</h6>
+          <p>Elusmod tempor incididunt<br>ut?</p>
+          <p>2 March 2024</p>
+          <button class="read-more-button"> Read More</button>
+        </div>
+        <div class="part">
+          <!-- Content for the third part -->
+          <div class="image-container"><img src="https://i.ibb.co/nQGJH3y/A1.png" class="card-image" alt="image"></div><br><br/>
+          <img src="https://i.ibb.co/Bnw5kxJ/A2.png" class="user-image" alt="image"> 
+          <h4>Mark Raymon</h4>
+          <h6>Graphic Designer</h6>
+          <p>Eiusmod tempor incidunt ut <br> olo sit amet, conse?</p>
+          <p>2 March 2023</p>
+          <button class="read-more-button"> Read More</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="part">
+          <!-- Content for the fourth part -->
+          <div class="image-container"><img src="https://i.ibb.co/nQGJH3y/A1.png" class="card-image" alt="image"></div><br><br/>
+          <img src="https://i.ibb.co/Bnw5kxJ/A2.png" class="user-image" alt="image"> 
+          <h4>Mark Ray</h4>
+          <h6>Graphic Designer</h6>
+          <p>Elusmod tempor incididunt<br>ut?</p>
+          <p>2 March 2024</p>
+          <button class="read-more-button"> Read More</button>
+        </div>
+        <div class="part">
+          <!-- Content for the fifth part -->
+          <div class="image-container"><img src="https://i.ibb.co/nQGJH3y/A1.png" class="card-image" alt="image"></div><br><br/>
+          <img src="https://i.ibb.co/Bnw5kxJ/A2.png" class="user-image" alt="image"> 
+          <h4>Mark Raymon</h4>
+          <h6>Graphic Designer</h6>
+          <p>Eiusmod tempor incidunt ut <br> olo sit amet, conse?</p>
+          <p>2 March 2023</p>
+          <button class="read-more-button"> Read More</button>
+        </div>
+        <div class="part">
+          <!-- Content for the sixth part -->
+          <div class="image-container"><img src="https://i.ibb.co/nQGJH3y/A1.png" class="card-image" alt="image"></div><br><br/>
+          <img src="https://i.ibb.co/Bnw5kxJ/A2.png" class="user-image" alt="image"> 
+          <h4>Jessica</h4>
+          <h6>UI/UX Designer</h6>
+          <p>Consectetur adipisicing elit<br> dolore magna aliqua?</p>
+          <p>12 Jan 2024</p>
+          <button class="read-more-button"> Read More</button>
+        </div>
+      </div>
+      <div class="count">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-part-1 footer-part">
+              <img src="https://i.ibb.co/jDZSGYR/Intelli-logo.png" alt="Logo" class="footer-logo"/>
+              <p>Intelli Vectra is a Technology and Vendor 
+                <br>agnostic solution provider. </p>
+            </div>
+            <div class="footer-part-2 footer-part">
+              <h3>Our Company</h3>
+                <a href="#">About Us</a><br>
+                <a href="#">Our Team</a><br>
+                <a href="#">Our OEMs</a><br>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-part-3 footer-part">
+                <h3>Our Solutions</h3>
+                  <a href="#">Consulting Services</a><br>
+                  <a href="#">Platform and Operaion Services</a><br>
+                  <a href="#">Enterprise Application Services</a><br>
+                  <a href="#">Digital Services</a><br>
+                  <a href="#">Security Services</a><br>
+                  <a href="#">Staffing Services</a><br>
+              </div>
+            <div class="footer-part-4 footer-part">
+                <h3>Contact Us</h3>
+                <i class="fas fa-phone"><br>012-4496-0635</i><br>
+                <i class="fas fa-envelope"><br>info@intellivectra.tech</i><br>
+                <i class="fas fa-map-marker-alt"><br>2nd Floor, Plot No. 29, <br>
+                    Maruti Industrial Area,<br> 
+                    Sector-18,<br> 
+                    Gurugram–122015,Haryana</i><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
